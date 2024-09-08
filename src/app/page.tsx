@@ -1,7 +1,5 @@
 import Herosection from "@/components/Herosection";
 import Featured from "@/components/Featured";
-import Image from "next/image";
-import Link from "next/link";
 import Techstack from "@/components/Techstack";
 
 export default function Home() {
@@ -15,7 +13,6 @@ export default function Home() {
       <Herosection />
       <Featured />
       <Techstack />
-      
     </>
   );
 }

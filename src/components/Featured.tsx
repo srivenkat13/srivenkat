@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import ProjectData from "../data/projects.json";
-import { BackgroundGradient } from "./ui/background-gradient";
 import Link from "next/link";
 import Image from "next/image";
 import { Meteors } from "./ui/meteros";

@@ -26,7 +26,7 @@ const Herosection = () => {
           </h1>
 
           <div className="mt-4 font-normal text-xs md:text-xl text-neutral-300 max-w-lg mx-auto">
-            I'm Sri Venkat, a Frontend developer using
+            I&apos;m Sri Venkat, a Frontend developer using
             <FlipWords
               words={words}
               duration={2000}
@@ -41,12 +41,11 @@ const Herosection = () => {
           <div className="mt-4">
             <Link href={"https://github.com/srivenkat13"} target="_blank">
               <Button className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800">
-                Show me code 
+                Show me code
                 <span className="ml-1">
-                  <MoveUpRight size={18}  />
+                  <MoveUpRight size={18} />
                 </span>
               </Button>
-
             </Link>
           </div>
         </div>
