@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "id": 2,
+      "title": "Drawing Board ",
+      "description": "A Drawing board with live collaboration and save as png features",
+      "uses": ["Next.js", "Redux", "Socket.io"],
+      "image": "/images/dboard.png"
+    },
+    {
+      "id": 1,
+      "title": "Kanban Board ",
+      "description": "Fully Responsive Kanban board with Drag-n-drop of items and columns",
+      "uses": ["React", "dnd-kit", "TypeScript"],
+      "image": "/images/kanban.png"
+    },
+    {
+      "id": 3,
+      "title": "Workout Buddy",
+      "description": "A Full Stack app to track workouts, has user authenitication",
+      "uses": ["React", "ExpressJS", "JWT", "MongoDB"],
+      "image": "/images/workout.png"
+    }
+  ]
+}
