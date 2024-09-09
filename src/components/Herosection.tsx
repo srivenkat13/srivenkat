@@ -12,7 +12,7 @@ const Herosection = () => {
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
-      <div className="h-auto md:h-[40rem] w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-14  md:py-0">
+      <div className="h-auto md:h-[40rem] w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto  py-14  md:py-0">
         <Spotlight
           className="top-5 left-0 md:left-60 md:-top-20"
           fill="white"

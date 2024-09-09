@@ -13,6 +13,9 @@ export default function Home() {
       <Herosection />
       <Featured />
       <Techstack />
+      <div className="h-[2rem] py-2  text-xs font-bold  antialiased text-neutral-300 text-center bg-white/[0.04]">
+        🪄 By Venkat
+      </div>
     </>
   );
 }

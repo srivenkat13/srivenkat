@@ -14,10 +14,11 @@ interface Project {
 }
 export default function Featured() {
   return (
-    <div className=" py-6 md:py-12 " id="featured">
+    <div className=" py-2 md:py-12 bg-grid-large-white/[0.05] " id="featured">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <div>
-        <div className="text-center">
-          <h2 className=" text-xl md:text-3xl text-teal-500 font-semibold tracking-widest ">
+        <div className="mt-2 text-center">
+          <h2 className=" text-2xl md:text-3xl text-teal-500 font-bold  ">
             Featured Projects
           </h2>
         </div>
@@ -26,8 +27,8 @@ export default function Featured() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {ProjectData.projects.map((project: Project) => (
             <div key={project.id} className="flex justify-center group">
-              <div className=" shadow-feature-card flex flex-col rounded-[22px]  dark:bg-transparent overflow-hidden h-full max-w-sm relative">
-                <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow ">
+              <div className=" shadow-feature-card flex flex-col rounded-[22px]  dark:bg-black overflow-hidden h-full max-w-sm relative">
+                <div className="p-4  sm:p-6 flex flex-col items-center text-center flex-grow ">
                   <Image
                     src={project.image}
                     alt={project.title}
@@ -35,7 +36,7 @@ export default function Featured() {
                     width="800"
                     className="object-contain rounded-lg  group-hover:scale-105"
                   />
-                  <p className="text-xl font-bold sm:text-2xl text-black mt-4 mb-2 dark:text-neutral-200">
+                  <p className="text-xl font-bold sm:text-2xl text-black mt-8 mb-2 dark:text-neutral-200">
                     {project.title}
                   </p>
                   <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow">
@@ -45,7 +46,7 @@ export default function Featured() {
                     {project.uses.map((item, index) => (
                       <div
                         key={index}
-                        className="rounded-full border text-neutral-300 px-3 py-2 text-xs leading-4 dark:bg-zinc-900"
+                        className="rounded-full  shadow-pill text-neutral-300 px-3 py-2 text-xs leading-4 "
                       >
                         {item}
                       </div>
@@ -58,7 +59,7 @@ export default function Featured() {
           ))}
         </div>
       </div>
-      <div className="mt-20 text-center">
+      <div className="mt-10 mb-5 text-center">
         <Link href={"/projects"}>
           <button className="inline-flex h-14 animate-shimmer items-center justify-center rounded-full border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
             View more
